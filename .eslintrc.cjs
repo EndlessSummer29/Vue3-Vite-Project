@@ -11,5 +11,12 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest'
-  }
+  },
+  /* 忽略除了App.vue之外，取文件名没有大驼峰命名导致eslint报错Component name "*" should always be multi-word */
+  'vue/nulti-word-component-name': [
+    'error',
+    {
+      ignores: ['Index']
+    }
+  ]
 }
