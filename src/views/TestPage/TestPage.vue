@@ -5,7 +5,8 @@
   </div>
 </template>
 <script setup lang="ts">
-import { inject, ref, onMounted } from 'vue';
+import { inject, ref, onMounted, onBeforeUnmount } from 'vue';
+import { WSInit } from '../../utils/websocket';
 
 const $axios: any = inject('$axios');
 
@@ -14,6 +15,11 @@ let questionsNum = ref(0 as number); //总题目数量
 let newfordata = ref([] as any);
 let resultdata = ref([] as any);
 
+let WS: WebSocket | null = new WebSocket(import.meta.env.VITE_API_BASE_WS);
+
+const sendHeartBeat = function () {};
+const receiveMsg = function () {};
+const reconnectWs = function () {};
 // 生命周期钩子
 onMounted(() => {
   $axios.getTest('testdata').then((res: any) => {
@@ -60,6 +66,11 @@ onMounted(() => {
     resultdata.value = Object.values(transformedData);
     console.log(resultdata.value);
   });
+  WSInit(WS, 'create', 5000, sendHeartBeat, receiveMsg, reconnectWs);
+});
+onBeforeUnmount(() => {
+  WSInit(WS, 'close');
+  WS = null;
 });
 </script>
 <style lang="scss" scoped>
