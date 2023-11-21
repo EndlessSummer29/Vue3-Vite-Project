@@ -13,6 +13,14 @@ import HelloWorld from '../components/HelloWorld.vue';
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/classstyle"> ClassStyle </RouterLink>
+        <RouterLink to="/computed"> computed </RouterLink>
+        <RouterLink to="/watch"> watch </RouterLink>
+        <RouterLink to="/vforobject"> vforobject </RouterLink>
+        <RouterLink to="/domref"> domref </RouterLink>
+        <RouterLink to="/usecomponents"> usecomponents-emit&props </RouterLink>
+        <RouterLink to="/usecomponents1"> usecomponents1-slot </RouterLink>
+        <RouterLink to="/provideinject"> provide inject </RouterLink>
       </nav>
     </div>
   </header>
