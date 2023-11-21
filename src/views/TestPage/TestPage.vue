@@ -1,11 +1,11 @@
 <template>
   <div id="scoreboard">
-    <a href="">12134214444444</a>
     {{ resultdata }}
   </div>
 </template>
 <script setup lang="ts">
 import { inject, ref, onMounted, onBeforeUnmount } from 'vue';
+import { RouterLink } from 'vue-router';
 import { WSInit } from '../../utils/websocket';
 
 const $axios: any = inject('$axios');
