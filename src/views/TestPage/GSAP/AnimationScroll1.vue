@@ -98,7 +98,4 @@ onMounted(() => {
 });
 onUnmounted(() => {});
 </script>
-<style lang="scss" scoped>
-#smooth-wrapper {
-}
-</style>
+<style lang="scss" scoped></style>
