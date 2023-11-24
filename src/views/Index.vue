@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router';
 import HelloWorld from '../components/HelloWorld.vue';
+import testpage from '@/router/testpage';
 </script>
 
 <template>
@@ -11,8 +12,8 @@ import HelloWorld from '../components/HelloWorld.vue';
       <HelloWorld msg="You did it!" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink v-for="(item, i) in testpage" :to="item.path">{{ item.name }}</RouterLink>
+        <!-- <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/classstyle"> ClassStyle </RouterLink>
         <RouterLink to="/computed"> computed </RouterLink>
         <RouterLink to="/watch"> watch </RouterLink>
@@ -21,6 +22,8 @@ import HelloWorld from '../components/HelloWorld.vue';
         <RouterLink to="/usecomponents"> usecomponents-emit&props </RouterLink>
         <RouterLink to="/usecomponents1"> usecomponents1-slot </RouterLink>
         <RouterLink to="/provideinject"> provide inject </RouterLink>
+        <RouterLink to="/animation">animation</RouterLink>
+        <RouterLink to="animationscroll">animationscroll</RouterLink> -->
       </nav>
     </div>
   </header>
