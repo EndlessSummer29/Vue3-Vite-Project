@@ -71,5 +71,10 @@ export default [
     path: '/animationscroll2',
     name: 'animationscroll2',
     component: () => import('../views/TestPage/GSAP/AnimationScroll2.vue')
+  },
+  {
+    path: '/testwebaudio',
+    name: 'testwebaudio',
+    component: () => import('../views/TestPage/WebAudio/TestOne.vue')
   }
 ];
