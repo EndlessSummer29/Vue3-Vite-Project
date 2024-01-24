@@ -1,14 +1,15 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import testpage from './testpage';
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
       name: 'ScoreBoard',
-      component: () => import('../views/TestPage/TestPage.vue')
+      // component: () => import('../views/TestPage/TestPage.vue')
+      component: () => import('../views/Index.vue')
     },
     {
       path: '/father',
