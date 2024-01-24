@@ -2,17 +2,17 @@
   <div id="audioinit"></div>
   <div id="canvasinit"></div>
   <!-- <audio controls id="audioplay" :src="WelcomeToNewYork"></audio> -->
-  <button @click="startaudiodream(WelcomeToNewYork)">WelcomeToNewYork</button>
+  <!-- <button @click="startaudiodream(WelcomeToNewYork)">WelcomeToNewYork</button> -->
   <button @click="startaudiodream(Red)">Red</button>
-  <button @click="startaudiodream(BlankSpace)">BlankSpace</button>
+  <!-- <button @click="startaudiodream(BlankSpace)">BlankSpace</button> -->
   <button @click="startaudiodream(SeaSideRoad)">SeaSideRoad</button>
   <button @click="startaudiodream(PuppyLove)">PuppyLove</button>
-  <button @click="startaudiodream(RedTaylor)">RedTaylor</button>
-  <button @click="startaudiodream(TwentyTwo)">TwentyTwo</button>
-  <button @click="startaudiodream(WeAreNeverEverGettingBackTogether)">
+  <!-- <button @click="startaudiodream(RedTaylor)">RedTaylor</button> -->
+  <!-- <button @click="startaudiodream(TwentyTwo)">TwentyTwo</button> -->
+  <!-- <button @click="startaudiodream(WeAreNeverEverGettingBackTogether)">
     WeAreNeverEverGettingBackTogether
-  </button>
-  <button @click="startaudiodream(BeginAgain)">BeginAgain</button>
+  </button> -->
+  <!-- <button @click="startaudiodream(BeginAgain)">BeginAgain</button> -->
   <button @click="startaudiodream(CruelWorld)">CruelWorld</button>
   <!-- <input id="loadfile" type="file" :onchange="upload" /> -->
 </template>
@@ -31,14 +31,14 @@ import {
   type HtmlHTMLAttributes
 } from 'vue';
 import Red from '../../../assets/audios/07 Red.flac';
-import WelcomeToNewYork from "../../../assets/audios/01 Welcome To New York (Taylor's Version).flac";
-import BlankSpace from "../../../assets/audios/02 Blank Space (Taylor's Version).flac";
+// import WelcomeToNewYork from "../../../assets/audios/01 Welcome To New York (Taylor's Version).flac";
+// import BlankSpace from "../../../assets/audios/02 Blank Space (Taylor's Version).flac";
 import SeaSideRoad from '../../../assets/audios/Eshen Chen - Sea Side Road.mp3';
 import PuppyLove from '../../../assets/audios/puppy-love.mp3';
-import RedTaylor from "../../../assets/audios/2. Red (Taylor's Version).flac";
-import TwentyTwo from "../../../assets/audios/6. 22 (Taylor's Version).flac";
-import WeAreNeverEverGettingBackTogether from "../../../assets/audios/8. We Are Never Ever Getting Back Together (Taylor's Version).flac";
-import BeginAgain from "../../../assets/audios/16. Begin Again (Taylor's Version).flac";
+// import RedTaylor from "../../../assets/audios/2. Red (Taylor's Version).flac";
+// import TwentyTwo from "../../../assets/audios/6. 22 (Taylor's Version).flac";
+// import WeAreNeverEverGettingBackTogether from "../../../assets/audios/8. We Are Never Ever Getting Back Together (Taylor's Version).flac";
+// import BeginAgain from "../../../assets/audios/16. Begin Again (Taylor's Version).flac";
 import CruelWorld from '../../../assets/audios/The Music of Red Dead Redemption 2 (Original Soundtrack)/13 Cruel World.flac';
 let startaudiodream: any;
 let AudioDom: HTMLMediaElement | null;
